@@ -1,0 +1,26 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 45, in script
+    $ multi_say((father, captain, father),
+  File "game/script.rpy", line 45, in <module>
+    $ multi_say((father, captain, father),
+NameError: name 'multi_say' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 45, in script
+    $ multi_say((father, captain, father),
+  File "/home/jj/Desktop/renpy-8.1.3-sdk/renpy/ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/home/jj/Desktop/renpy-8.1.3-sdk/renpy/python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 45, in <module>
+    $ multi_say((father, captain, father),
+NameError: name 'multi_say' is not defined
+
+Linux-5.15.0-91-generic-x86_64-with-glibc2.35 x86_64
+Ren'Py 8.1.3.23091805
+Treasure Island 1.0
+Tue Dec 26 16:24:59 2023
